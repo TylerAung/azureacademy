@@ -45,7 +45,7 @@ Bicep is a much friendlier language to use. You can deploy Bicep files directly 
   <summary>Not sure how?</summary>
 
 ```
-az group create -n labs-arm-bicep  --tags courselabs=azure --location westeurope
+az group create -n labs-arm-bicep  --tags courselabs=azure --location southeastasia
 ```
 
 This will request parameter values from the CLI:

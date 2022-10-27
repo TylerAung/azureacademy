@@ -29,7 +29,7 @@ First we need to create a Resource Group where the new SQL resources will live.
 _Create the group - use your own preferred location:_
 
 ```
-az group create -n labs-sql-vm --tags courselabs=azure -l westeurope
+az group create -n labs-sql-vm --tags courselabs=azure -l southeastasia
 ```
 
 Next we need to find the VM image to use. We'll use SQL Server 2019 Standard on a Windows Server 2022 machine:
@@ -39,10 +39,10 @@ Next we need to find the VM image to use. We'll use SQL Server 2019 Standard on 
 az vm image list-offers --publisher MicrosoftSQLServer -o table
 
 # find a SKU:
-az vm image list-skus -f sql2019-ws2022 -p MicrosoftSQLServer --location westeurope -o table
+az vm image list-skus -f sql2019-ws2022 -p MicrosoftSQLServer --location southeastasia -o table
 
 # list all the images, e.g:
-az vm image list --sku standard -f sql2019-ws2022 -p MicrosoftSQLServer --location westeurope -o table --all
+az vm image list --sku standard -f sql2019-ws2022 -p MicrosoftSQLServer --location southeastasia -o table --all
 ```
 
 📋 Create a SQL Server VM using the normal `vm create` command. 
@@ -53,7 +53,7 @@ az vm image list --sku standard -f sql2019-ws2022 -p MicrosoftSQLServer --locati
 This will get you started - be sure to use the latest image version, it will have a URN like this: _MicrosoftSQLServer:sql2019-ws2022:standard:15.0.220913_
 
 ```
-az vm create -l westeurope -g labs-sql-vm -n sql01 --image <urn> --size Standard_D2_v3 --admin-username labs --admin-password <your-strong-password> --public-ip-address-dns-name  <your-dns-name> 
+az vm create -l southeastasia -g labs-sql-vm -n sql01 --image <urn> --size Standard_D2_v3 --admin-username labs --admin-password <your-strong-password> --public-ip-address-dns-name  <your-dns-name> 
 ```
 
 </details><br/>

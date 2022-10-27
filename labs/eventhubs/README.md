@@ -23,12 +23,12 @@ Portal - 'event hub'; create:
 Create an RG and an Event Hub namespace:
 
 ```
-az group create -n labs-eventhubs -l westeurope --tags courselabs=azure
+az group create -n labs-eventhubs -l southeastasia --tags courselabs=azure
 
 az eventhubs namespace create --help
 
 # create a namespace with set TLS and capacity:
-az eventhubs namespace create --min-tls 1.2 --capacity 2 --location westeurope --sku Basic -g labs-eventhubs -n labseventhubses # <unique-dns-name>
+az eventhubs namespace create --min-tls 1.2 --capacity 2 --location southeastasia --sku Basic -g labs-eventhubs -n labseventhubses # <unique-dns-name>
 ```
 
 Open the namespace in the Portal:

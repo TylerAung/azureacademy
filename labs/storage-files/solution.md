@@ -20,7 +20,7 @@ az storage share-rm create -n labs-premium --quota 100 --access-tier Premium --s
 New SA - needs to be Premium SKU & file storage kind:
 
 ```
-az storage account create -g labs-storage-files  -l westeurope --sku Premium_LRS --kind FileStorage -n labsstoragefileslabes3
+az storage account create -g labs-storage-files  -l southeastasia --sku Premium_LRS --kind FileStorage -n labsstoragefileslabes3
 
 az storage share-rm create -n labs-premium --quota 100 --access-tier Premium --storage-account labsstoragefileslabes3
 ```

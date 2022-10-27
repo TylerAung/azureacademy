@@ -25,7 +25,7 @@ Create a new resource and search for _redis_ - there are lots of matches. Redis 
 We'll create a Redis instance in the CLI:
 
 ```
-az group create -n labs-redis -l westeurope --tags courselabs=azure
+az group create -n labs-redis -l southeastasia --tags courselabs=azure
 
 # note that you can use a JSON file for more advanced config options:
 az redis create --help

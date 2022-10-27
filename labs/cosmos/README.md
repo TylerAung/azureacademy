@@ -28,7 +28,7 @@ Portal - create "cosmos"; choose the SQL API:
 Create a Cosmos DB account with the CLI:
 
 ```
-az group create -n labs-cosmos  -l westeurope --tags courselabs=azure
+az group create -n labs-cosmos  -l southeastasia --tags courselabs=azure
 
 az cosmosdb create --help
 

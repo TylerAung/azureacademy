@@ -19,7 +19,7 @@ VM Scale Sets are great for running applications at scale, but when you're first
 Start with a new RG for this lab:
 
 ```
-az group create -n labs-vmss-linux --tags courselabs=azure -l westeurope
+az group create -n labs-vmss-linux --tags courselabs=azure -l southeastasia
 ```
 
 cloud-init is a powerful cross-platform system for configuring new machines. You can do all the usual steps for deploying pre-requisites, installing applications and writing config files:
@@ -37,7 +37,7 @@ You can reference local files in `az` commands with `@<file-path>` syntax:
 
 ```
 # remember to use a size which is available to you:
-az vm create -l westeurope -g labs-vmss-linux -n web01 --image UbuntuLTS --size Standard_A1_v2 --custom-data @labs/vmss-linux/setup/cloud-init.txt --public-ip-address-dns-name <your-dns-name>
+az vm create -l southeastasia -g labs-vmss-linux -n web01 --image UbuntuLTS --size Standard_A1_v2 --custom-data @labs/vmss-linux/setup/cloud-init.txt --public-ip-address-dns-name <your-dns-name>
 ```
 
 </details><br/>

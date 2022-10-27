@@ -31,7 +31,7 @@ Local (within datacenter); zone-redundant (within region); geo-redundant (betwee
 ## Create a storage account
 
 
-az group create -n labs-storage  -l westeurope --tags courselabs=azure
+az group create -n labs-storage  -l southeastasia --tags courselabs=azure
 
 az storage account --help
 
@@ -42,7 +42,7 @@ Create a zone-redundant storage account with standard performance (https://docs.
 
 ```
 # names have stricter rules than most Azure resources
-az storage account create -g labs-storage  -l westeurope --sku Standard_ZRS -n labsstoragees
+az storage account create -g labs-storage  -l southeastasia --sku Standard_ZRS -n labsstoragees
 ```
 
 Open in the portal - one storage account can support multiple types of storage. Blob storage (Binary Large OBjects) is a simple file storage option - upload the file `document.txt` in this folder as a blob.
@@ -79,7 +79,7 @@ Now you can read the file.
 
 Create a VM with custom storage SKU:
 
-az vm create -l westeurope -g labs-storage -n vm01 --image UbuntuLTS --size Standard_A1_v2 --storage-sku StandardSSD_ZRS
+az vm create -l southeastasia -g labs-storage -n vm01 --image UbuntuLTS --size Standard_A1_v2 --storage-sku StandardSSD_ZRS
 
 
 Check the storage accounts:
@@ -93,11 +93,11 @@ az storage account list -g labs-storage -o table
 Create a premium storage account and a VM with the OS disk stored in that account - check the [VM types](https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-general) to see which support premium storage.
 
 ```
-az storage account create -g labs-storage  -l westeurope --sku Premium_LRS -n labsstoragediskes
+az storage account create -g labs-storage  -l southeastasia --sku Premium_LRS -n labsstoragediskes
 
 az storage container create -n vm-disks --account-name labsstoragediskes
 
-az vm create -l westeurope -g labs-storage -n vm04 --image UbuntuLTS --size Standard_D2as_v5  --use-unmanaged-disk --storage-container-name vm-disks --storage-account labsstoragediskes
+az vm create -l southeastasia -g labs-storage -n vm04 --image UbuntuLTS --size Standard_D2as_v5  --use-unmanaged-disk --storage-container-name vm-disks --storage-account labsstoragediskes
 ```
 
 Now browse to the new storage account - how is the disk stored?

@@ -37,7 +37,7 @@ First we need to create a Resource Group where the new VM resources will live. T
 _Create the group - use your own preferred location:_
 
 ```
-az group create -n labs-vm --tags courselabs=azure -l westeurope
+az group create -n labs-vm --tags courselabs=azure -l southeastasia
 ```
 
 _Find a valid (small) VM size for your subscription & region:_
@@ -80,7 +80,7 @@ This will get you started:
 
 ```
 # it's good to include a size, as the default might not be available
-az vm create -l westeurope -g labs-vm -n vm01 --image UbuntuLTS --size Standard_A1_v2
+az vm create -l southeastasia -g labs-vm -n vm01 --image UbuntuLTS --size Standard_A1_v2
 ```
 
 </details><br/>

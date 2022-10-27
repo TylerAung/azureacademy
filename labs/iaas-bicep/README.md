@@ -28,7 +28,7 @@ It's worth taking some time to look at this Bicep file. It's small enough to be 
 This is straightforward - a `group create` and a `deployment group create`:
 
 ```
-az group create -n labs-iaas-bicep --tags courselabs=azure -l westeurope 
+az group create -n labs-iaas-bicep --tags courselabs=azure -l southeastasia 
 
 az deployment group create -g labs-iaas-bicep --name core --template-file labs/iaas-bicep/templates/core.bicep
 ```

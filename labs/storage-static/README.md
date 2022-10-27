@@ -11,9 +11,9 @@
 Normal storage account:
 
 ```
-az group create -n labs-storage-static  -l westeurope --tags courselabs=azure
+az group create -n labs-storage-static  -l southeastasia --tags courselabs=azure
 
-az storage account create -g labs-storage-static  -l westeurope --sku Standard_LRS -n labsstoragestatices
+az storage account create -g labs-storage-static  -l southeastasia --sku Standard_LRS -n labsstoragestatices
 ```
 
 

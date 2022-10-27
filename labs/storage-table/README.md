@@ -19,9 +19,9 @@ Table -> rows. Rows have partition key (top-level grouping) and row key (item ID
 Standard SA is fine:
 
 ```
-az group create -n labs-storage-table  -l westeurope --tags courselabs=azure
+az group create -n labs-storage-table  -l southeastasia --tags courselabs=azure
 
-az storage account create -g labs-storage-table  -l westeurope --sku Standard_LRS -n labsstoragetablees
+az storage account create -g labs-storage-table  -l southeastasia --sku Standard_LRS -n labsstoragetablees
 ```
 
 

@@ -16,13 +16,13 @@ Competing consumer pattern vs partition consumer - locks & high water marks. Nee
 Create an RG and an Event Hub namespace:
 
 ```
-az group create -n labs-eventhubs-consumers -l westeurope --tags courselabs=azure
+az group create -n labs-eventhubs-consumers -l southeastasia --tags courselabs=azure
 
 # create a namespace - standard SKU for multiple consumer groups:
-az eventhubs namespace create --min-tls 1.2 --capacity 2 --location westeurope --sku Standard -g labs-eventhubs-consumers -n labseventhubsconsumerses # <unique-dns-name>
+az eventhubs namespace create --min-tls 1.2 --capacity 2 --location southeastasia --sku Standard -g labs-eventhubs-consumers -n labseventhubsconsumerses # <unique-dns-name>
 
 # create storage account for consumer state:
-az storage account create  -l westeurope --sku Standard_ZRS -g labs-eventhubs-consumers -n labseventhubsconsumerses # <unique-dns-name>
+az storage account create  -l southeastasia --sku Standard_ZRS -g labs-eventhubs-consumers -n labseventhubsconsumerses # <unique-dns-name>
 
 # and two blob containers in the storage account:
 az storage container create -n checkpoints  -g labs-eventhubs-consumers --account-name labseventhubsconsumerses

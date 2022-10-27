@@ -44,7 +44,7 @@ This is the repo your static web app will be deployed from.
 The RG is easy - use your own choice of location:
 
 ```
-az group create -n labs-appservice-static  -l westeurope --tags courselabs=azure
+az group create -n labs-appservice-static  -l southeastasia --tags courselabs=azure
 ```
 
 Check the help text for creating a static web app:

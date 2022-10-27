@@ -29,7 +29,7 @@ First we need to create a Resource Group where the new VM resources will live. T
 _Create the group - use your own preferred location:_
 
 ```
-az group create -n labs-vm-web --tags courselabs=azure -l westeurope
+az group create -n labs-vm-web --tags courselabs=azure -l southeastasia
 ```
 
 📋 Create an Ubuntu Server VM using the CLI. Specify a unique public DNS name to access the VM.  
@@ -48,7 +48,7 @@ There's a parameter called `public-ip-address-dns-name` which you can use to set
 
 ```
 # remember to use a size which is available to you:
-az vm create -l westeurope -g labs-vm-web -n vm01 --image UbuntuLTS --size Standard_A1_v2 --public-ip-address-dns-name <your-dns-name>
+az vm create -l southeastasia -g labs-vm-web -n vm01 --image UbuntuLTS --size Standard_A1_v2 --public-ip-address-dns-name <your-dns-name>
 ```
 
 </details><br/>

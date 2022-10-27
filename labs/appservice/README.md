@@ -30,7 +30,7 @@ As usual, we won't create from the Portal, we'll switch to the CLI.
 Create a Resource Group for the lab:
 
 ```
-az group create -n labs-appservice  -l westeurope --tags courselabs=azure
+az group create -n labs-appservice  -l southeastasia --tags courselabs=azure
 ```
 
 Before we can create the app we need an App Service Plan - which is an abstraction of the infrastructure needed to run applications.
@@ -122,7 +122,7 @@ You can add the web app SCM as a remote to your Git repo, with the output from t
 
 ```
 # use single quotes as username contains a dollar sign:
-git remote add webapp '<url-with-credentials>'
+git remote add webapp '<url-with-credentials>' (Requires single quote)
 
 # verify that the remote is saved correctly:
 git remote -v

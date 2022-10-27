@@ -58,7 +58,7 @@ ARM templates can be deployed using the CLI. You always deploy a template into a
 Strat by creating a resource group:
 
 ```
-az group create -n labs-arm --tags courselabs=azure --location westeurope
+az group create -n labs-arm --tags courselabs=azure --location southeastasia
 ```
 
 📋 Use the `deployment group create` command to deploy the ARM template in `labs/arm/storage-account/azuredeploy.json`

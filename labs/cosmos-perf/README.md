@@ -13,7 +13,7 @@
 Create a Cosmos DB account - no perf settings at account level:
 
 ```
-az group create -n labs-cosmos-perf  -l westeurope --tags courselabs=azure
+az group create -n labs-cosmos-perf  -l southeastasia --tags courselabs=azure
 
 az cosmosdb create -g labs-cosmos-perf --enable-public-network --kind GlobalDocumentDB --default-consistency-level Eventual -n labs-cosmos-perf-es # <unique-dns-name>
 ```

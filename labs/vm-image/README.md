@@ -29,7 +29,7 @@ We'll be deploying a simple Windows application that runs on the IIS Web Server.
 Create the RG in your preferred location:
 
 ```
-az group create -n labs-vm-image --tags courselabs=azure --location westeurope
+az group create -n labs-vm-image --tags courselabs=azure --location southeastasia
 ```
 
 Find the SKU for Windows:
@@ -41,7 +41,7 @@ az vm image list-skus -l westus -p MicrosoftWindowsServer -f WindowsServer -o ta
 Now create the VM with your chosen size, location and SKU:
 
 ```
-az vm create -l westeurope -g labs-vm-image -n app01-base --image MicrosoftWindowsServer:WindowsServer:2022-datacenter-core-g2:latest --size Standard_D2s_v5 --admin-username labs --public-ip-address-dns-name <your-unique-dns-name> --admin-password <your-strong-password>
+az vm create -l southeastasia -g labs-vm-image -n app01-base --image MicrosoftWindowsServer:WindowsServer:2022-datacenter-core-g2:latest --size Standard_D2s_v5 --admin-username labs --public-ip-address-dns-name <your-unique-dns-name> --admin-password <your-strong-password>
 ```
 
 </details><br/>
@@ -153,7 +153,7 @@ You often want to keep your images in a separate Resource Group, because they ha
 This is just an ordinary RG:
 
 ```
-az group create -n labs-vmss-win --location westeurope
+az group create -n labs-vmss-win --location southeastasia
 ```
 
 The copy command takes source and target parameters:
@@ -177,7 +177,7 @@ You can use the normal `vm create` command, using your image name instead of a m
 This will create 3 VMs from your base image:
 
 ```
-az vm create -g labs-vm-image -n app-n --image app01-image --size Standard_D2s_v5 --admin-username labs  --count 3 -l westeurope --admin-password <strong-password>
+az vm create -g labs-vm-image -n app-n --image app01-image --size Standard_D2s_v5 --admin-username labs  --count 3 -l southeastasia --admin-password <strong-password>
 ```
 
 Try browsing to the app on one of your VMs, using its public IP address.

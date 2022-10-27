@@ -13,10 +13,10 @@ Messaging patterns - pub-sub, multiple subscribers - for async service consumpti
 Create a namespace with the CLI:
 
 ```
-az group create -n labs-servicebus-pubsub -l westeurope --tags courselabs=azure
+az group create -n labs-servicebus-pubsub -l southeastasia --tags courselabs=azure
 
 # create with TLS 1.2 and Standard tier - needed for topics
-az servicebus namespace create -g labs-servicebus-pubsub --location westeurope --sku Standard --min-tls 1.2 -n labsservicebuspubsubes2 # <unique-dns-name>
+az servicebus namespace create -g labs-servicebus-pubsub --location southeastasia --sku Standard --min-tls 1.2 -n labsservicebuspubsubes2 # <unique-dns-name>
 ```
 
 Create a topic:

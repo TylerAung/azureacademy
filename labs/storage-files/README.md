@@ -17,9 +17,9 @@ SMB file share; directory structure; shared access - multiple components, cloud 
 Azure Files is a feature of a Storage Account. Start by creating the RG and SA:
 
 ```
-az group create -n labs-storage-files  -l westeurope --tags courselabs=azure
+az group create -n labs-storage-files  -l southeastasia --tags courselabs=azure
 
-az storage account create -g labs-storage-files  -l westeurope --sku Standard_LRS -n labsstoragefileses
+az storage account create -g labs-storage-files  -l southeastasia --sku Standard_LRS -n labsstoragefileses
 ```
 
 Standard redundancy options.

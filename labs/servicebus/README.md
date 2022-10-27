@@ -21,11 +21,11 @@ Portal - 'service bus'; create:
 Create a namespace with the CLI:
 
 ```
-az group create -n labs-servicebus -l westeurope --tags courselabs=azure
+az group create -n labs-servicebus -l southeastasia --tags courselabs=azure
 
 az servicebus namespace create --help
 
-az servicebus namespace create -g labs-servicebus --location westeurope --sku Basic -n labsservicebuses # <unique-dns-name>
+az servicebus namespace create -g labs-servicebus --location southeastasia --sku Basic -n labsservicebuses # <unique-dns-name>
 ```
 
 > output includes service bus endpoint - comms is over HTTPS

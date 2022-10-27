@@ -34,9 +34,9 @@ We'll use a custom script to install Nginx on a web server.
 Start by creating a Resource Group and a VM:
 
 ```
-az group create -n labs-vm-config --tags courselabs=azure -l westeurope
+az group create -n labs-vm-config --tags courselabs=azure -l southeastasia
 
-az vm create -l westeurope -g labs-vm-config -n web01 --image UbuntuLTS --size <your-vm-size> --public-ip-address-dns-name <your-dns-name>
+az vm create -l southeastasia -g labs-vm-config -n web01 --image UbuntuLTS --size <your-vm-size> --public-ip-address-dns-name <your-dns-name>
 ```
 
 Custom scripts are specified in JSON. There's an extensive [schema](https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/custom-script-linux#extension-schema) which you can use to provide a file URL, confidential settings for passwords, and more. 
@@ -137,7 +137,7 @@ An easier option is to use `vm run-command`, which can read a local script file 
 First create the VM - be sure to use a VM size you have access to, the latest Windows 11 image and a strong password:
 
 ```
-az vm create -l westeurope -g labs-vm-config -n dev01 --image <windows-11-image> --size Standard_D4s_v5 --admin-username labs --public-ip-address-dns-name <your-unique-dns-name> --admin-password <your-strong-password>
+az vm create -l southeastasia -g labs-vm-config -n dev01 --image <windows-11-image> --size Standard_D4s_v5 --admin-username labs --public-ip-address-dns-name <your-unique-dns-name> --admin-password <your-strong-password>
 ```
 
 When the VM is created you can run the command:

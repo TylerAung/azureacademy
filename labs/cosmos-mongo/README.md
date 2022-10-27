@@ -17,7 +17,7 @@ Portal - create "cosmos"; choose the Mongo API:
 Create a Cosmos DB account with the CLI:
 
 ```
-az group create -n labs-cosmos-mongo -l westeurope --tags courselabs=azure
+az group create -n labs-cosmos-mongo -l southeastasia --tags courselabs=azure
 
 az cosmosdb create --help
 

@@ -36,7 +36,7 @@ First we need to create a Resource Group where the new SQL resources will live.
 _Create the group - use your own preferred location:_
 
 ```
-az group create -n labs-sql --tags courselabs=azure -l westeurope
+az group create -n labs-sql --tags courselabs=azure -l southeastasia
 ```
 
 Now you can create the SQL Server which will be the host for the database.

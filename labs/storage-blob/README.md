@@ -8,9 +8,9 @@ Storage - flat structur (mimic directory in object names)
 
 ## Managing Blob Storage with the CLI
 
-az group create -n labs-storage-blob  -l westeurope --tags courselabs=azure
+az group create -n labs-storage-blob  -l southeastasia --tags courselabs=azure
 
-az storage account create -g labs-storage-blob  -l westeurope --sku Standard_LRS -n labsstorageblobes
+az storage account create -g labs-storage-blob  -l southeastasia --sku Standard_LRS -n labsstorageblobes
 
 az storage container create -n labs  -g labs-storage-blob --account-name labsstorageblobes
 

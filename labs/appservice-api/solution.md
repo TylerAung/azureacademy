@@ -7,7 +7,7 @@ Make sure you update the [index.html](static/index.html) file to use your own AP
 Then deploy a static web app from your fork:
 
 ```
-az staticwebapp create  -g labs-appservice-api --branch main --app-location "/labs/appservice-api/static" --login-with-github -l westeurope -n <dns-name> --source <github-fork-url>
+az staticwebapp create  -g labs-appservice-api --branch main --app-location "/labs/appservice-api/static" --login-with-github -l southeastasia -n <dns-name> --source <github-fork-url>
 ```
 
 The app will take a few minutes to deploy - you can check the status of the GitHub Action on your fork. 
